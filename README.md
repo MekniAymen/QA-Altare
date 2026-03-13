@@ -6,8 +6,7 @@
 - [ ] C Marks the class as configuration 
 - [x] D Injects required dependencies automatically
 
-**Explanation:** 
-And it is not recommanded when we have one constructor, but when we have multiple contructors it is recommanded to use **@Autowired** to tell to spring which constructor will be used to inject the dependencies.
+> **Explanation:** And it is not recommanded when we have one constructor, but when we have multiple contructors it is recommanded to use **@Autowired** to tell to spring which constructor will be used to inject the dependencies.
 
 ### 2. In a Spring Boot application, a developer uses @Value annotation to inject a property. What happens if the property key does not exist in application.yml and no default value is provided? 
 - [ ] A Property is set to null 
@@ -15,8 +14,7 @@ And it is not recommanded when we have one constructor, but when we have multipl
 - [ ] C Application ignores the field 
 - [ ] D Spring assigns a random value
 
-**Explanation:**  
-if the key not exist in the configuration file and no default value provided, spring cannot resolve the placeholder, this causes a bean creation error and the application fails on start-up.
+> **Explanation:** If the key not exist in the configuration file and no default value provided, spring cannot resolve the placeholder, this causes a bean creation error and the application fails on start-up.
 
 ### 3. Consider this Spring Boot controller method: 
 ```
@@ -30,8 +28,7 @@ What is the purpose of @PathVariable in this context?
 - [x] B Binds URI segment to parameter 
 - [ ] C Handles JSON serialization 
 - [ ] D Injects a bean
-**Explanation:**
-@PathVariable extracts a value from the URL path and assigns it to a method parameter.
+> **Explanation:** @PathVariable extracts a value from the URL path and assigns it to a method parameter.
 
 ### 4. Choose all correct statements about using @Transactional in a Spring Boot service method handling order placement in an e-commerce system. 
 - [ ] A May not roll back on RuntimeException 
@@ -40,8 +37,7 @@ What is the purpose of @PathVariable in this context?
 - [ ] D Prevents dirty reads and non-repeatable reads 
 - [ ] E Supports nested transactions with default config
 
-Explanation:
-@Transactional ensures that all database operations inside the method succeed or fail together. 
+> Explanation: @Transactional ensures that all database operations inside the method succeed or fail together. 
 
 ### 5. Which pattern helps prevent duplicate processing when a microservice receives the same message multiple times due to retries from a queue? 
 - [ ] A Load balancing 
